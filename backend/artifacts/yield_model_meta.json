@@ -1,0 +1,74 @@
+{
+  "type": "regression",
+  "cat_cols": [
+    "State",
+    "District",
+    "Crop",
+    "Season"
+  ],
+  "num_cols": [
+    "Crop_Year",
+    "Temperature",
+    "Humidity",
+    "Soil_Moisture",
+    "Area"
+  ],
+  "metrics_holdout_test": {
+    "random_forest": {
+      "rmse": 264.05591261765176,
+      "mae": 25.01621626081738,
+      "median_ae": 0.367537648085424,
+      "r2_score": 0.8766225023436025,
+      "explained_variance": 0.8766654900401536,
+      "smape_pct": 39.67282773686623
+    },
+    "xgboost": {
+      "rmse": 215.41462364532975,
+      "mae": 18.80135791214854,
+      "median_ae": 0.3403974354512407,
+      "r2_score": 0.9178902878356495,
+      "explained_variance": 0.917938588300383,
+      "smape_pct": 44.65682388934254
+    },
+    "ensemble_weighted": {
+      "rmse": 223.41893368528736,
+      "mae": 19.9109587848586,
+      "median_ae": 0.35726586113010883,
+      "r2_score": 0.911674904809316,
+      "explained_variance": 0.9117217941798956,
+      "smape_pct": 44.01695419673015
+    }
+  },
+  "metrics_fit_split_train": {
+    "random_forest": {
+      "rmse": 144.75460108223604,
+      "mae": 13.942636604101697,
+      "median_ae": 0.20743572295574808,
+      "r2_score": 0.9590822056400503,
+      "explained_variance": 0.9590822061064678,
+      "smape_pct": 27.967387160119017
+    },
+    "xgboost": {
+      "rmse": 33.1656699134289,
+      "mae": 3.389902348587518,
+      "median_ae": 0.280045682733709,
+      "r2_score": 0.9978520458348851,
+      "explained_variance": 0.997852051521081,
+      "smape_pct": 36.67009303412964
+    },
+    "ensemble_weighted": {
+      "rmse": 58.960429475364,
+      "mae": 5.957762742793527,
+      "median_ae": 0.2697846763775855,
+      "r2_score": 0.9932115794679834,
+      "explained_variance": 0.9932115819865414,
+      "smape_pct": 34.99242362948636
+    }
+  },
+  "ensemble_weights": {
+    "random_forest": 0.26,
+    "xgboost": 0.74
+  },
+  "artifact": "C:\\Users\\Asus\\Documents\\CROP\\backend\\artifacts\\yield_model_bundle.pkl",
+  "default_crop": "Rice"
+}

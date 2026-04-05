@@ -1,0 +1,19 @@
+{
+  "test_size": 0.2,
+  "random_state": 42,
+  "recommendation": {
+    "stratify": "label",
+    "files": {
+      "train": "crop_recommendation_train.csv",
+      "test": "crop_recommendation_test.csv"
+    }
+  },
+  "yield": {
+    "stratify": null,
+    "target_column": "yield",
+    "files": {
+      "train": "crop_yield_train.csv",
+      "test": "crop_yield_test.csv"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+backend/artifacts/*.pkl
+# Large generated train/test exports (remove these lines if you want them in git)
+backend/artifacts/splits/*.csv
+frontend/node_modules/
+frontend/dist/
+.DS_Store
